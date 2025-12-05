@@ -5,14 +5,14 @@ from pydub import AudioSegment
 from openai import OpenAI
 
 # Konfiguracja strony
-st.set_page_config(page_title="Podsumowanie Audio lub Wideo", layout="centered")
+st.set_page_config(page_title="PODSUMOWANIE PLIKÓW Audio i Wideo", layout="centered")
 
 # Pomocnicze zmienne w session_state
 if "uploader_key" not in st.session_state:
     st.session_state.uploader_key = 0
 
 # Tytuł
-st.markdown("<h1 style='text-align:center;'>PODSUMOWANIE PLIKÓW Audio I Wideo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>Podsumowanie Audio lub Wideo</h1>", unsafe_allow_html=True)
 
 # Opis programu
 with st.expander("📖 **Opis programu** *(kliknij aby rozwinąć)*"):
